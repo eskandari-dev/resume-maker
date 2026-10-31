@@ -1,0 +1,32 @@
+---
+description: Tailor Amir's resume from the Base resume for one job. Use when creating or editing a tailored resume, CV, or file named *-Amir-CV.md.
+globs: "**/*-Amir-CV.md"
+alwaysApply: false
+---
+
+# Tailored resumes
+
+The resume in `Base/` is the only source of facts. Read it before writing. A tailored resume selects, reorders, and rephrases that file for one job. It keeps the base resume's sections, heading names, contact block, and voice.
+
+If `Base/` has no resume, stop and ask for one.
+
+## Change only emphasis
+
+- Lead with skills and bullets that match this job.
+- Drop bullets that do not help this application when the same work is already covered.
+- Use the job's terms only when the base resume already supports that work.
+
+## Leave facts alone
+
+Do not add or alter employers, titles, dates, education, locations, metrics, scope, or tools. If a requirement is not in the base resume, omit it.
+
+```markdown
+<!-- Base: "Built event-driven billing services on Kafka." -->
+<!-- Job asks for distributed systems. -->
+
+<!-- Good -->
+- Built event-driven billing services on Kafka, processing payment events across services.
+
+<!-- Bad: the scale is not in the base resume -->
+- Designed a distributed system handling 10M events per day.
+```

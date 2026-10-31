@@ -1,0 +1,39 @@
+---
+description: Write a cover letter from Amir's base resume for one company and role. Use when creating or editing a cover letter or file named *-Amir-CoverLetter.md.
+globs: "**/*-Amir-CoverLetter.md"
+alwaysApply: false
+---
+
+# Cover letters
+
+Write one Markdown letter for one company and one role. Use facts from the base resume in `Base/` and from the job description only. Do not invent employment, metrics, or personal history.
+
+If `Base/` has no resume, stop and ask for one.
+
+## Shape
+
+Use four short paragraphs:
+
+1. Name the role and company, and why this opening fits.
+2. One proof point from the base resume, tied to a requirement in the job.
+3. A second proof point, tied to a different requirement. Skip this paragraph if the resume supports only one.
+4. A short close that asks for a conversation. Mention salary, visa, or availability only when the user or the base resume states them.
+
+Address it to a named person when the job description gives one. Otherwise address the hiring team. Sign with the name in the base resume's contact block.
+
+Use "I". Do not paste resume bullets. State the outcome and why it matters for this job.
+
+```markdown
+Dear Hiring Team,
+
+I am applying for the Backend Engineer role at Northwind. Your focus on payment reliability matches the billing services I operate.
+
+At Example Co I built event-driven billing on Kafka so payment events survive a service restart. That is the failure mode this role is meant to reduce.
+
+I would welcome a conversation about the role.
+
+Sincerely,
+Amir
+```
+
+A number, title, or employer that is not in the base resume does not belong in the letter.
